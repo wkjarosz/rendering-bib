@@ -64,7 +64,7 @@ If you do have suggestions for additions/corrections, please follow these guidel
 * Include a DOI entry if appropriate.
 * Include the page range (and use an en-dash `--`).
 * Do not include a url field, or other superfluous fields that are often included in bib files from ACM Portal (articlenum, acmid, etc).
-* Do not force a particular capitalization for the entire title. Use sentence case, and wrap proper nouns in braces to force capitalization of just those words. Wrap the entire word instead of just the first letter, e.g. `{Monte} {Carlo}` and not `{M}onte {C}arlo` (the latter can cause kerning issues).
+* Do not force a particular capitalization for the entire title but do wrap proper nouns in braces to force capitalization of just those words. Wrap the entire word instead of just the first letter, e.g. `{Monte} {Carlo}` and not `{M}onte {C}arlo` (the latter can cause kerning issues).
 
 # Acknowledgements
 The entries were primarily seeded from the bibliographies of my prior [publications](https://cs.dartmouth.edu/~wjarosz/#publications). I also incorporated Jim Arvo's excellent graphics, physics, and transport bib entries which are [still available on the wayback machine](https://web.archive.org/web/20120117002445/http://www.ics.uci.edu/~arvo/software.html), and Per Christensen's [importance bibliography](https://www.seanet.com/~myandper/importance.htm).
