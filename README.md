@@ -5,7 +5,7 @@ This repo houses the master bibliography file that I use for my academic researc
 This repo grew out of my frustration of having to repeatedly search/download bib entries or copy-paste from prior projects (and subsequently correct) in every research project I work on. Instead, I decided to assemble the vast majority of my previously cited papers into a single master bib file which I would use as a starting point for all projects.
 
 # Usage
-The main bibliography is in `rendering-bib.bib`. To ensure consistent naming of journals, publishers, etc. this bibliography makes extensive use of `@string`s which are defined in `strings-full.bib`.
+The main bibliography is in [rendering-bib.bib](rendering-bib.bib). To ensure consistent naming of journals, publishers, etc. this bibliography makes extensive use of `@string`s which are defined in `strings-full.bib`.
 
 ## BibTeX
 To include this in your LaTeX project using BibTeX, you'd do something like this
