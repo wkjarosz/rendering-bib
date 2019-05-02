@@ -7,8 +7,12 @@ This repo grew out of my frustration of having to repeatedly search/download bib
 # Usage
 The main bibliography is in [rendering-bib.bib](rendering-bib.bib). To ensure consistent naming of journals, publishers, etc. this bibliography makes extensive use of `@string`s which are defined in [strings-full.bib](strings-full.bib).
 
+## Examples
+
+[rendering-bib.tex](rendering-bib.tex) and [rendering-bibla.tex](rendering-bibla.tex) contain full LaTeX + BibTeX and LaTeX + BibLaTeX source code for producing the entire bibliography. The [examples/](examples/) directory includes precompiled pdfs for both of these: ([BibTeX version](examples/rendering-bib.pdf), and [BibLaTeX version](examples/rendering-bibla.pdf)).
+
 ## BibTeX
-To include this in your LaTeX project using BibTeX, you'd do something like this
+To include this in your own LaTeX project using BibTeX, you'd do something like this
 ```
 \bibliography{strings-full,rendering-bib}
 ```
@@ -20,7 +24,7 @@ You will likely need to add on some of your own entries. I recommend you do so i
 
 A benefit of putting the strings in a different bib file is that you can redefine the venues and publisher macros to abbreviated version by creating a `strings-abbrv.bib` file (e.g. when needing to squeeze space for submission), and issuing:
 ```
-\bibliography{strings-abbrv,rendering-bib}
+\bibliography{strings-abbrv,rendering-bib,additional}
 ```
 instead.
 
@@ -48,12 +52,8 @@ With BibLaTeX, you can also easily filter the bibliography. For instance, you co
 Note that if you use `\nocite{*}`, compiling can take quite some time, especially with biber/BibLaTeX.
 
 ## Overleaf
-Soon, I also plan to release a shared Overleaf project that simply houses this bibliography and is synced with this git repo. This should make it even easier to get the latest version of this bibliography if you use Overleaf.
-
-## Examples
-
-The [examples/](examples/) directory includes a LaTeX file which lists the entire bibliography using either BibTex or BibLaTeX, as well as the resulting pdf file ([BibTeX version](examples/references-bib.pdf), and [BibLaTeX version](examples/references-bibla.pdf)).
-
+The bibliography is also [available through Overleaf](https://v2.overleaf.com/read/pkthgyqxhcgk
+). You can include it in your own Overleaf projects following [these directions](https://www.overleaf.com/learn/how-to/Can_I_share_files_(e.g._.bib_and_some_graphics)_across_my_projects%3F).
 
 # Contributing
 I gladly accept pull requests with corrections. While I intend to keep extending this bibliography – and I welcome pull requests with additions – my goal is to restrict the entries to ones that are relevant to my own research to avoid an unnecessary explosion of entries.
