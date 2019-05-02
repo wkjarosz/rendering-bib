@@ -45,6 +45,8 @@ With BibLaTeX, you can also easily filter the bibliography. For instance, you co
 \printbibliography[nottype=thesis,nottype=book,nottype=inproceedings,nottype=article,title={Everything Else}]
 ```
 
+Note that if you use `\nocite{*}`, compiling can take quite some time, especially with biber/BibLaTeX.
+
 ## Overleaf
 Soon, I also plan to release a shared Overleaf project that simply houses this bibliography and is synced with this git repo. This should make it even easier to get the latest version of this bibliography if you use Overleaf.
 
@@ -65,7 +67,7 @@ If you do have suggestions for additions/corrections, please follow these guidel
 * Do not force a particular capitalization for the entire title. Use sentence case, and wrap proper nouns in braces to force capitalization of just those words. Wrap the entire word instead of just the first letter (the latter can cause kerning issues)
 
 # Acknowledgements
-The bibliography entries were primarily seeded from the bibliographies of my prior [publications](https://cs.dartmouth.edu/~wjarosz/#publications). I also incorporated Jim Arvo's excellent graphics, physics, and transport bib entries which are [still available on the wayback machine](https://web.archive.org/web/20120117002445/http://www.ics.uci.edu/~arvo/software.html), and Per Christensen's [importance bibliography](https://www.seanet.com/~myandper/importance.htm).
+The entries were primarily seeded from the bibliographies of my prior [publications](https://cs.dartmouth.edu/~wjarosz/#publications). I also incorporated Jim Arvo's excellent graphics, physics, and transport bib entries which are [still available on the wayback machine](https://web.archive.org/web/20120117002445/http://www.ics.uci.edu/~arvo/software.html), and Per Christensen's [importance bibliography](https://www.seanet.com/~myandper/importance.htm).
 
 While they are not included here, you may also be interested in Ian Ashdown's extensive [radbib bibliography](http://www.helios32.com/radbib.bib) with some 3000+ references to mostly radiosity literature.
 
