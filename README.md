@@ -1,5 +1,5 @@
 # rendering-bib
-This repo houses the master bibliography file that I use for my academic research (containing 2000+ entries), released here in case it will be useful to others. It contains publications mostly in computer graphics, rendering, transport theory, and statistics. There is a BibTeX version (I plan to release a Biber/BibLaTeX version. Both versions are automatically generated from my [Zotero](https://www.zotero.org/) library using the [Better-BibTeX](https://github.com/retorquere/zotero-better-bibtex) addon.
+This repo houses the master bibliography file that I use for my academic research (containing 2000+ entries), released here in case it will be useful to others. It contains publications mostly in computer graphics, rendering, transport theory, and statistics. The bib files are automatically generated from my [Zotero](https://www.zotero.org/) library using the [Better-BibTeX](https://github.com/retorquere/zotero-better-bibtex) addon.
 
 # Motivation
 This repo grew out of my frustration of having to repeatedly search/download bib entries or copy-paste from prior projects (and subsequently correct) in every research project I work on. Instead, I decided to assemble the vast majority of my previously cited papers into a single master bib file which I would use as a starting point for all projects.
