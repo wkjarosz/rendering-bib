@@ -59,10 +59,10 @@ The [examples/](examples/) directory includes a LaTeX file which lists the entir
 I gladly accept pull requests with corrections. While I intend to keep extending this bibliography – and I welcome pull requests with additions – my goal is to restrict the entries to ones that are relevant to my own research to avoid an unnecessary explosion of entries.
 
 If you do have suggestions for additions/corrections, please follow these guidelines:
-* Use the relevant `@string`s defined in `strings-full.bib`. In particular, conferences such as SIGGRAPH and EGSR were published differently across the years (sometimes as a journal, sometimes just a proceedings, sometimes both). Make sure to use the correct `@string`. In years that an article is published both as a proceedings and in a journal, prefer the journal version.
+* Use the relevant `@string`s defined in [strings-full.bib](strings-full.bib). In particular, conferences such as SIGGRAPH and EGSR were published differently across the years (sometimes as a journal, sometimes just a proceedings, sometimes both). Make sure to use the correct `@string`. In years that an article is published both as a proceedings and in a journal, prefer the journal version.
 * Include the full first name of all authors, instead of just first initials. The bibliography style may abbreviate to first initials, but its impossible to go the other direction.
 * Include a DOI entry if appropriate.
-* Include the page range (and use an en-dash '--').
+* Include the page range (and use an en-dash `--`).
 * Do not include a url field, or other superfluous fields that are often included in bib files from ACM Portal (articlenum, acmid, etc).
 * Do not force a particular capitalization for the entire title. Use sentence case, and wrap proper nouns in braces to force capitalization of just those words. Wrap the entire word instead of just the first letter, e.g. `{Monte} {Carlo}` and not `{M}onte {C}arlo` (the latter can cause kerning issues).
 
