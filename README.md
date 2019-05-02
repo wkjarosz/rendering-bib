@@ -5,7 +5,7 @@ This repo houses the master bibliography file that I use for my academic researc
 This repo grew out of my frustration of having to repeatedly search/download bib entries (and subsequently correct) or copy-paste from prior projects in every research project I work on. Instead, I decided to assemble the vast majority of my previously cited papers into a single master bib file which I would use as a starting point for all projects.
 
 # Usage
-The main bibliography is in [rendering-bib.bib](rendering-bib.bib). To ensure consistent naming of journals, publishers, etc. this bibliography makes extensive use of `@string`s which are defined in [strings-full.bib](strings-full.bib).
+The main bibliography is in [rendering-bib.bib](rendering-bib.bib) (there is also a BibLaTeX version [rendering-bibla.bib](rendering-bibla.bib)). To ensure consistent naming of journals, publishers, etc. both of these makes extensive use of `@string`s which are defined in [strings-full.bib](strings-full.bib).
 
 ## Examples
 
@@ -63,8 +63,8 @@ If you do have suggestions for additions/corrections, please follow these guidel
 * Include the full first name of all authors, instead of just first initials. The bibliography style may abbreviate to first initials, but its impossible to go the other direction.
 * Include a DOI entry if appropriate.
 * Include the page range (and use an en-dash `--`).
-* Do not include a url field, or other superfluous fields that are often included in bib files from ACM Portal (articlenum, acmid, etc).
-* Do not force a particular capitalization for the entire title but do wrap proper nouns in braces to force capitalization of just those words. Wrap the entire word instead of just the first letter, e.g. `{Monte} {Carlo}` and not `{M}onte {C}arlo` (the latter can cause kerning issues).
+* Do not include a url field (unless the entry is for a website), or other superfluous fields that are often included in bib files from ACM Portal (articlenum, acmid, etc).
+* Do not force a particular capitalization for the entire title, but do wrap proper nouns in braces to force capitalization of just those words. Wrap the entire word instead of just the first letter, e.g. `{Monte} {Carlo}` and not `{M}onte {C}arlo` (the latter can cause kerning issues).
 
 # Acknowledgements
 The entries were primarily seeded from the bibliographies of my prior [publications](https://cs.dartmouth.edu/~wjarosz/#publications). I also incorporated Jim Arvo's excellent graphics, physics, and transport bib entries (which are [still available on the wayback machine](https://web.archive.org/web/20120117002445/http://www.ics.uci.edu/~arvo/software.html)), and Per Christensen's [importance bibliography](https://www.seanet.com/~myandper/importance.htm).
