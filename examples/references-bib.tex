@@ -1,0 +1,37 @@
+\documentclass[acmtog,natbib=true,screen,review=false]{acmart}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACM layout tweaks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% A few style hacks to remove ACM-specific stuff
+\setcopyright{none}
+\settopmatter{printacmref=false, printccs=false, printfolios=false}
+\renewcommand{\footnotetextcopyrightpermission}[1]{}
+\renewcommand{\footnotetextauthorsaddresses}[1]{}
+\fancyfoot[R,L]{}
+\fancypagestyle{firstpagestyle}{}
+\fancyhead[LO,RE]{}
+\fancyhead[LE,RO]{\thepage}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textgreek}
+
+% \renewcommand*{\bibfont}{\footnotesize}
+
+\begin{document}
+\title{Rendering Bibliography}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\bibsection}{}
+
+\nocite{*}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{../strings-full,../bibliography}
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[acmtog,natbib=false,screen,review=false]{acmart}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACM layout tweaks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% A few style hacks to remove ACM-specific stuff
+\setcopyright{none}
+\settopmatter{printacmref=false, printccs=false, printfolios=false}
+\renewcommand{\footnotetextcopyrightpermission}[1]{}
+\renewcommand{\footnotetextauthorsaddresses}[1]{}
+\fancyfoot[R,L]{}
+\fancypagestyle{firstpagestyle}{}
+\fancyhead[LO,RE]{}
+\fancyhead[LE,RO]{\thepage}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textgreek}
+
+%======================================================================
+% Bibliography setup
+%======================================================================
+\RequirePackage[
+sorting=nyvt,
+% sorting=none,
+sortcites=true,
+backend=biber,
+natbib=true,
+% style=numeric-comp,
+style=ACM-Reference-Format,
+giveninits=false,
+maxbibnames=150,
+defernumbers=true,
+]{biblatex} % load the package
+
+\addbibresource{../strings-full.bib}
+\addbibresource{../bibliography.bib}
+
+\renewcommand*{\bibfont}{\footnotesize}
+\setlength{\biblabelsep}{\labelsep}
+% ----------------------------------------------------------------------
+
+\begin{document}
+\title{Rendering Bibliography}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\nocite{*}
+\printbibliography[type=article,title={Journal Articles}]
+\printbibliography[type=inproceedings,title={Conference Papers}]
+\printbibliography[type=book,title={Books}]
+\printbibliography[type=thesis,title={Theses}]
+\printbibliography[nottype=thesis,nottype=book,nottype=inproceedings,nottype=article,title={Everything Else}]
+
+\end{document}
