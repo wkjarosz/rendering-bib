@@ -5,17 +5,53 @@ This repo houses the master bibliography file that I use for my academic researc
 This repo grew out of my frustration of having to repeatedly search/download bib entries or copy-paste from prior projects (and subsequently correct) in every research project I work on. Instead, I decided to assemble the vast majority of my previously cited papers into a single master bib file which I would use as a starting point for all projects.
 
 # Usage
-The main bibliography is in `rendering-bib.bib`, with many string macros defined in `strings-full.bib` to ensure consistent naming of journals, publishers, etc. If you are using BibTeX, you'd use this like
+The main bibliography is in `rendering-bib.bib`. To ensure consistent naming of journals, publishers, etc. this bibliography makes extensive use of `@string`s which are defined in `strings-full.bib`.
 
+## BibTeX
+To include this in your LaTeX project using BibTeX, you'd do something like this
 ```
 \bibliography{strings-full,rendering-bib}
 ```
 
-The nice thing about putting the strings in a different bib file is that you can redefine the venues and publisher macros to abbreviated version by creating a `strings-abbrv.bib` file (e.g. when needing to squeeze space for submission), and issuing:
+You will likely need to add on some of your own entries. I recommend you do so in a separate bib file, e.g. `additional.bib`, so you'd use:
+```
+\bibliography{strings-full,rendering-bib,additional}
+```
+
+A benefit of putting the strings in a different bib file is that you can redefine the venues and publisher macros to abbreviated version by creating a `strings-abbrv.bib` file (e.g. when needing to squeeze space for submission), and issuing:
 ```
 \bibliography{strings-abbrv,rendering-bib}
 ```
 instead.
+
+## BibLaTeX
+If you use BibLaTeX, you'd instead add the following to your preamble (somewhere after you include the biblatex package):
+```
+\addbibresource{strings-full.bib}
+\addbibresource{rendering-bib.bib}
+```
+
+Then, you would add the bibliography in the main paper by issuing the command:
+```
+\printbibliography
+```
+
+With BibLaTeX, you can also easily filter the bibliography. For instance, you could list articles, conference papers, books, and theses separately:
+```
+\printbibliography[type=article,title={Journal Articles}]
+\printbibliography[type=inproceedings,title={Conference Papers}]
+\printbibliography[type=book,title={Books}]
+\printbibliography[type=thesis,title={Theses}]
+\printbibliography[nottype=thesis,nottype=book,nottype=inproceedings,nottype=article,title={Everything Else}]
+```
+
+## Overleaf
+Soon, I also plan to release a shared Overleaf project that simply houses this bibliography and is synced with this git repo. This should make it even easier to get the latest version of this bibliography if you use Overleaf.
+
+## Examples
+
+The `examples/` directory includes a LaTeX file which lists the entire bibliography (some 100+ pages!), as well as the resulting pdf file.
+
 
 # Contributing
 I gladly accept pull requests with corrections. While I intend to keep extending this bibliography – and I welcome pull requests with additions – my goal is to restrict the entries to ones that are relevant to my own research to avoid an unnecessary explosion of entries.
