@@ -67,7 +67,7 @@ If you do have suggestions for additions/corrections, please follow these guidel
 * Do not force a particular capitalization for the entire title but do wrap proper nouns in braces to force capitalization of just those words. Wrap the entire word instead of just the first letter, e.g. `{Monte} {Carlo}` and not `{M}onte {C}arlo` (the latter can cause kerning issues).
 
 # Acknowledgements
-The entries were primarily seeded from the bibliographies of my prior [publications](https://cs.dartmouth.edu/~wjarosz/#publications). I also incorporated Jim Arvo's excellent graphics, physics, and transport bib entries which are [still available on the wayback machine](https://web.archive.org/web/20120117002445/http://www.ics.uci.edu/~arvo/software.html), and Per Christensen's [importance bibliography](https://www.seanet.com/~myandper/importance.htm).
+The entries were primarily seeded from the bibliographies of my prior [publications](https://cs.dartmouth.edu/~wjarosz/#publications). I also incorporated Jim Arvo's excellent graphics, physics, and transport bib entries (which are [still available on the wayback machine](https://web.archive.org/web/20120117002445/http://www.ics.uci.edu/~arvo/software.html)), and Per Christensen's [importance bibliography](https://www.seanet.com/~myandper/importance.htm).
 
 While they are not included here, you may also be interested in Ian Ashdown's extensive [radbib bibliography](http://www.helios32.com/radbib.bib) with some 3000+ references to mostly radiosity literature.
 
