@@ -5,26 +5,26 @@ This repo houses the master bibliography file that I use for my academic researc
 This repo grew out of my frustration of having to repeatedly search/download bib entries (and subsequently correct) or copy-paste from prior projects in every research project I work on. Instead, I decided to assemble the vast majority of my previously cited papers into a single master bib file which I would use as a starting point for all projects.
 
 # Usage
-The main bibliography is in [rendering-bib.bib](rendering-bib.bib) (there is also a BibLaTeX version [rendering-bibla.bib](rendering-bibla.bib)). To ensure consistent naming of journals, publishers, etc. both of these makes extensive use of `@string`s which are defined in [strings-full.bib](strings-full.bib).
+The main bibliography is in [rendering-bibtex.bib](rendering-bibtex.bib) (there is also a BibLaTeX version [rendering-biblatex.bib](rendering-biblatex.bib)). To ensure consistent naming of journals, publishers, etc. both of these makes extensive use of `@string`s which are defined in [strings-full.bib](strings-full.bib).
 
 ## Examples
 
-[rendering-bib.tex](rendering-bib.tex) and [rendering-bibla.tex](rendering-bibla.tex) contain full LaTeX + BibTeX and LaTeX + BibLaTeX source code for producing the entire bibliography. The [examples/](examples/) directory includes precompiled pdfs for both of these: ([BibTeX version](examples/rendering-bib.pdf), and [BibLaTeX version](examples/rendering-bibla.pdf)).
+[rendering-bibtex.tex](rendering-bibtex.tex) and [rendering-biblatex.tex](rendering-biblatex.tex) contain full LaTeX + BibTeX and LaTeX + BibLaTeX source code for producing the entire bibliography. The [examples/](examples/) directory includes precompiled pdfs for both of these: ([BibTeX version](examples/rendering-bibtex.pdf), and [BibLaTeX version](examples/rendering-biblatex.pdf)).
 
 ## BibTeX
 To include this in your own LaTeX project using BibTeX, you'd do something like this
 ```
-\bibliography{strings-full,rendering-bib}
+\bibliography{strings-full,rendering-bibtex}
 ```
 
 You will likely need to add on some of your own entries. I recommend you do so in a separate bib file, e.g. `additional.bib`, so you'd use:
 ```
-\bibliography{strings-full,rendering-bib,additional}
+\bibliography{strings-full,rendering-bibtex,additional}
 ```
 
 A benefit of putting the strings in a different bib file is that you can redefine the venues and publisher macros to abbreviated version by creating a `strings-abbrv.bib` file (e.g. when needing to squeeze space for submission), and issuing:
 ```
-\bibliography{strings-abbrv,rendering-bib,additional}
+\bibliography{strings-abbrv,rendering-bibtex,additional}
 ```
 instead.
 
@@ -32,7 +32,7 @@ instead.
 If you use BibLaTeX, you'd instead add the following to your preamble (somewhere after you include the biblatex package):
 ```
 \addbibresource{strings-full.bib}
-\addbibresource{rendering-bib.bib}
+\addbibresource{rendering-biblatex.bib}
 ```
 
 Then, you would add the bibliography in the main paper by issuing the command:
