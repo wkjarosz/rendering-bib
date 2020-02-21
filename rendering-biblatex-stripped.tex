@@ -38,7 +38,7 @@ defernumbers=true,
 % ----------------------------------------------------------------------
 
 \begin{document}
-\title{Rendering Bibliography \textsc{Bib}\LaTeX}
+\title{Rendering Bibliography using \textsc{Bib}\LaTeX}
 
 \maketitle
 
@@ -46,14 +46,11 @@ defernumbers=true,
 % Bibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\citet{Abraham:2010:Noninvasive}
-
 \nocite{*}
-\printbibliography
-% \printbibliography[type=article,title={Journal Articles}]
-% \printbibliography[type=inproceedings,title={Conference Papers}]
-% \printbibliography[type=book,title={Books}]
-% \printbibliography[type=thesis,title={Theses}]
-% \printbibliography[nottype=thesis,nottype=book,nottype=inproceedings,nottype=article,title={Everything Else}]
+\printbibliography[type=article,title={Journal Articles}]
+\printbibliography[type=inproceedings,title={Conference Papers}]
+\printbibliography[type=book,title={Books}]
+\printbibliography[type=thesis,title={Theses}]
+\printbibliography[nottype=thesis,nottype=book,nottype=inproceedings,nottype=article,title={Everything Else}]
 
 \end{document}
